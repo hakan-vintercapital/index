@@ -140,7 +140,7 @@ Free-float equals circulating supply with a potential reduction due to
 one or more of the following factors:
 
 -   The amount of cryptocurrency allocated prior to the public release
-    of a Blockchain and that remain in the control of developers,
+    of a blockchain and that remain in the control of developers,
     principals, foundations or corporations.
 
 -   Cryptocurrencies that are deemed not accessible to any market
@@ -387,8 +387,8 @@ open source license and can therefore be copied and transformed by any
 group of developers. Whenever this happens the developers can choose between keeping the transaction history or erasing it. Erasing it means that the developers creates a new cryptocurrency and keeping means that the blockchain is experiencing what has been named a fork. Forks occur most often due to technical disagreements regarding the devel-
 opment of the blockchain. Because of this, developers often keep the old
 blockchain’s transaction history in order to optimize the number of users. This
-results in that cryptocurrency holdings on the old Blockchain are duplicated to
-the new Blockchain. However, due to new struc-
+results in that cryptocurrency holdings on the old blockchain are duplicated to
+the new blockchain. However, due to new struc-
 tural and technological aspects of each blockchain the combined value of the new blockchains does not need to equal the old blockchain’s value before the fork.
 
 Forks that occur with respect index constituents can cause uncertainty since it is not clear which of the two, or more, cryptocurrencies should be used as index constituent. Forks are also an operational risk for those who seek to track the index. For these reasons, the BlockchainX indices will use the cryptocurrency that is being traded on the largest number of *selected exchanges* as constituent. If both cryptocurrencies are traded on the same number of exchanges, highest price will be used to select constituent. This selection process continues until next rebalancing date. If prices are unavailable due to trade cessation, or other reasons, a last observation carried forward approach will be used.
@@ -398,22 +398,22 @@ Forks that occur with respect index constituents can cause uncertainty since it 
 Writing permissions to a blockchain’s transaction history are
 administered by the access to private keys, which are connected to
 public addresses controlling cryptocurrencies. However, only using
-private keys does not protect the Blockchain from users trying to spend
+private keys does not protect the blockchain from users trying to spend
 their holdings twice, also known as double-spend attacks. To protect
-itself from these attacks, all Blockchains implement some form of
+itself from these attacks, all blockchains implement some form of
 consensus process that enables the network to reach consensus regarding
 transaction validity. In order to ensure that users do not corrupt the
 consensus process, participation must come with a cost. For example, the Bitcoin network consumes electricity,
 in a process called Proof-of-Work (PoW), in order to protect its
 transaction history. Staking, or more formally Proof-of-Stake (PoS), is
-another technology used by Blockchains in order to maintain the
-immutability of their transaction history. Participants of a Blockchain
+another technology used by blockchains in order to maintain the
+immutability of their transaction history. Participants of a blockchain
 that implements staking can stake some of their holdings of the
 network’s cryptocurrency in order to participate in the consensus
 process. Those who stake and verify transactions in an honest manner are
 rewarded with new cryptocurrencies, while those who verify transactions
 that later are deemed invalid are penalized by loosing their stake.
-Certain Blockchains demand that staked cryptocurrencies are locked for a
+Certain blockchains demand that staked cryptocurrencies are locked for a
 certain time or that a certain amount of cryptocurrencies are staked,
 while others allow the reward of staking to depend on the time the
 holdings have been staked. The cost of staking is therefore an
@@ -426,11 +426,11 @@ However, specific purpose indices can be created for clients where
 staking revenue is included.
 
 ### Airdrops
-Airdrops occur when a Blockchain, or a part of a Blockchain, decides to
+Airdrops occur when a blockchain, or a part of a blockchain, decides to
 distribute cryptocurrencies, free of charge, to either their or a
-different Blockhain’s users. They are most often performed in order to
+different blockhain’s users. They are most often performed in order to
 boost network activity or to reward long-term users. Airdrops can come
-unannounced or they can be disclosed beforehand. Established Blockchains
+unannounced or they can be disclosed beforehand. Established blockchains
 that want to reward old users or boost network activity tend to not
 announce airdrops, while new networks often announce their airdrops due
 to marketing reasons. Airdrops often come with a need to perform some
