@@ -166,7 +166,7 @@ Selected exchanges {#sec:selected-exchanges}
 ------------------
 
 Selected exchanges contribute market data to the computation of the
-BlockchainX indices. As of , market data is obtained from the following
+BlockchainX indices. As of \today, market data is obtained from the following
 cryptocurrency exchanges: Bitfinex, OKCoin, Bitstamp, Itbit, Coinbase,
 Coinbase Pro, Kraken and Gemini. For an exchange to be selected as a
 data contributor it must have:
@@ -174,8 +174,8 @@ data contributor it must have:
 1.  been operating as a cryptocurrency exchange for a minimum of two
     years.
 
-2.  for at least one month, implemented trading, deposits and withdrawal
-    fees
+2.  implemented trading, deposits and withdrawal
+    fees without interruptions and for the duration of one month.
 
 3.  met a minimum monthly liquidity threshold with respect to total
     trading volume.
@@ -188,13 +188,12 @@ data contributor it must have:
 6.  chosen a jurisdiction of incorporation that offers sufficient
     investor protection.
 
-7.  fulfilled applicable regulatory frameworks such as know your
+7.  complied with relevant regulations such as know your
     customer and anti-money laundering requirements.
 
 8.  provided information concerning ownership and corporate structure.
 
-9.  passed the BlockchainX index committee’s risk, security and
-    suitability review. The review includes an evaluation of past
+9.  passed the BlockchainX index committee’s exchange review. The review is an overall assessment of market and operational risks. It includes but is not limited to an evaluation of past
     security breaches, trading cessations, legal disputes and if
     provided market data are to be considered readily available.
 
@@ -226,16 +225,16 @@ constituents in BlockchainX indices if they:
 1.  allow for air-gapped cold storage, including offline wallet
     generation and offline transaction signing.
 
-2.  have not been pegged to another asset such as currencies or
+2.  are not pegged to another asset such as currencies or
     commodities.
 
-3.  have for at least one month been traded on two selected exchanges.
+3.  been traded on two selected exchanges for the duration of one month.
 
 4.  can be deposited and withdrawn from at least two selected exchanges.
 
 5.  are not an ongoing Initial Coin Offering (ICO).
 
-6.  have at least 20% of last month's publicly traded volume located at selected
+6.  have in the last month had at least 20% of its publicly traded volume located at selected
     exchanges.
 
 7.  have no more than 90% of its monthly trading volume located at a
@@ -244,7 +243,7 @@ constituents in BlockchainX indices if they:
 8.  have a monthly trading volume that exceeds 20% of its circulating
     supply.
 
-9.  have at least a daily volume of USD 20 million over the past month.
+9.  have for the past month had a daily trading volume that exceeds USD 20 million.
 
 10. have not been deemed a security, or potential security, by the
     BlockchainX index committee.
@@ -384,14 +383,13 @@ Formally, a blockchain is a distributed database of a network's transaction hist
 cryptocurrencies is therefore the transferal of these writing
 permissions to another user. Blockchains are often developed under an
 open source license and can therefore be copied and transformed by any
-group of developers. Whenever this happens the developers can choose between keeping the transaction history or erasing it. Erasing it means that the developers creates a new cryptocurrency and keeping means that the blockchain is experiencing what has been named a fork. Forks occur most often due to technical disagreements regarding the devel-
+group of developers. Whenever this happens the developers can choose to keep the transaction history or to erase it. Erasing it means that the developers creates a new cryptocurrency and keeping it means that the blockchain is experiencing what has been named a fork. Forks occur most often due to technical disagreements regarding the devel-
 opment of the blockchain. Because of this, developers often keep the old
 blockchain’s transaction history in order to optimize the number of users. This
-results in that cryptocurrency holdings on the old blockchain are duplicated to
-the new blockchain. However, due to new struc-
-tural and technological aspects of each blockchain the combined value of the new blockchains does not need to equal the old blockchain’s value before the fork.
+results in that those who hold cryptocurrency on the old blockchain find themselves to hold an euqal amount of cryptocurrency on the new blockchain. However, due to new struc-
+tural and technological aspects of each blockchain the combined value of these assets do not need to equal the value of those assets held before the fork.
 
-Forks that occur with respect index constituents can cause uncertainty since it is not clear which of the two, or more, cryptocurrencies should be used as index constituent. Forks are also an operational risk for those who seek to track the index. For these reasons, the BlockchainX indices will use the cryptocurrency that is being traded on the largest number of *selected exchanges* as constituent. If both cryptocurrencies are traded on the same number of exchanges, highest price will be used to select constituent. This selection process continues until next rebalancing date. If prices are unavailable due to trade cessation, or other reasons, a last observation carried forward approach will be used.
+Forks that occur with respect index constituents can cause uncertainty in the computation of the index since it is not clear which of the two, or more, forks that should be used as the constituent. Forks are also an operational risk for those who seek to track the index since initiating trading of a new cryptocurrency often requires adjustments to trading infrastructure. In order for a fork to be eligible as an index constituent it needs to fulfill all BlockchainX constituent criteria, with exemption of those criteria that are based on historical performance. The eligible fork that is traded on the largest number of *selected exchanges* is then chosen as the constituent. If two or more eligible forks are traded on the same number of exchanges, highest price is used to select a constituent. This selection process continues until next rebalancing date. If prices are unavailable due to trade cessation, or other reasons, a last observation carried forward approach will be used.
 
 ### Staking
 
