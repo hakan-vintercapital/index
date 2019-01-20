@@ -18,8 +18,8 @@ BlockchainX indices
 The cryptocurrency market is in its infancy. This presents a challenge
 to established methods for indexing. BlockchainX indices combine the
 best of traditional index methodologies with appropriate adjustments for
-cryptocurrency factors such as: liquidity, capital controls, exchange
-stability and custody limitations.
+cryptocurrency factors such as, liquidity, exchange
+stability, custody limitations as well as regulatory requirements.
 
 The BlockchainX index family is developed to provide a rule-based and
 transparent way to track the value of cryptocurrencies. All indices are
@@ -98,10 +98,8 @@ independent data providers. Anomalies, such as abnormal deviation from
 average, are investigated. Providers with substantial and persistent
 anomalies are at risk of being removed as data contributors to the
 BlockchainX indices. Accuracy is verified by comparing contributed data
-with other trusted data sources, such as ECB, to which the associations
-patterns are considered to be known. Furthermore, computation schemes
-such as free-float schemes are also compared, both from a qualitative as
-well as quantitative perspective, between independent scheme providers.
+with other trusted data sources. Furthermore, computation schemes
+,such as free-float schemes, are also compared between independent scheme providers.
 
 Data correction procedure
 -------------------------
@@ -127,17 +125,13 @@ Circulating supply for each constituent is determined via:
     summation is based on the transaction history of a full node
     controlled by the BlockchainX index committee.
 
-2.  Iterating over all mined blocks and summing all newly minted
-    cryptocurrency. The summation is based on the transaction history of
-    a full node controlled by the BlockchainX index committee.
+2. The summation of issued cryptocurrency. The summation is performed with respect to previously mined blocks. using the transaction history of a full node controlled by the BlockchainX index committee.
 
-3.  Public Blockchain explorers selected and reviewed by the BlockchainX
-    index committee.
+3. If information on issued cryptocurrency is not available, circulating supply is estimated based on the cryptocurrency's specified emission rate and present block number.
 
-4.  Public code and documentation reviewed by the BlockchainX index
+4.  Other data sources reviewed by the BlockchainX index
     committee.
 
-5.  Other selected data contributors.
 
 Free-float
 ----------
@@ -194,7 +188,7 @@ data contributor it must have:
 6.  chosen a jurisdiction of incorporation that offers sufficient
     investor protection.
 
-7.  fulfilled all applicable regulatory frameworks such as know your
+7.  fulfilled applicable regulatory frameworks such as know your
     customer and anti-money laundering requirements.
 
 8.  provided information concerning ownership and corporate structure.
@@ -221,7 +215,7 @@ composite constituent price (described in \[sec:BCP\]). Pricing occurs
 with 20-second intervals between 00:00 and 24:00 CET.
 
 A daily closing value is calculated at 17:00 CET. The index value is
-published in USD, EUR and SEK using exchange rates from ECB.
+published in USD, EUR and SEK using validated exchange rates.
 
 Eligible constituents {#sec:eligible-const}
 ---------------------
@@ -241,7 +235,7 @@ constituents in BlockchainX indices if they:
 
 5.  are not an ongoing Initial Coin Offering (ICO).
 
-6.  have at least 20% of its monthly trading volume located at selected
+6.  have at least 20% of last month's publicly traded volume located at selected
     exchanges.
 
 7.  have no more than 90% of its monthly trading volume located at a
@@ -317,7 +311,7 @@ Index price and weights
 
 Let the number of selected constituents at time $t$ be denoted as
 $k(t)$. Let $w_i(t)$ and $p_i(t)$ be the weight and BCP of asset $i$.
-The BlockchainX index price is then given by: $$% \text{BLX}(t) =  
+The BlockchainX index price is then given by: $$% \text{BLX}(t) =
   \frac{  \sum_{1}^{k(t)} w_i(t) p_{i}(t)  }{\text{DIV}(t)}
 \label{eq:index}$$ where $\text{DIV}(t)$ is a divisor (described in
 section \[sec:divisor\]). The weight of asset $i$ at time $t$ is:
@@ -346,10 +340,10 @@ fee is accounted for by multiplying the previous day’s divisor with
 $(1 + 0.025/365)$.
 
 Given a positive number $\delta$, the divisor can be calculated for any
-time $t$ recursively via $$\text{DIV}(t) 
+time $t$ recursively via $$\text{DIV}(t)
   = \frac{\sum_{i}^{k(t)}
     w_{i}(t)p_{i}(t)}{\sum_{i}^{k(t-\delta)}
-    w_{i}(t-\delta)p_{i}(t-\delta)} 
+    w_{i}(t-\delta)p_{i}(t-\delta)}
     \text{DIV}(t-\delta)
 \label{eq:divisor}$$ which ensures index continuity.
 
@@ -386,101 +380,30 @@ constituents.
 
 ### Forks
 
-Formally, a Blockchain is a network of computers that have installed the
-same software in order to manage a distributed database of transaction
-history. To own cryptocurrency is equivalent to having writing
-permission to its Blockchain’s database. A transaction of
+Formally, a blockchain is a distributed database of a network's transaction history. To own a blockchain's cryptocurrency is to have writing permission to this database. A transaction of
 cryptocurrencies is therefore the transferal of these writing
 permissions to another user. Blockchains are often developed under an
 open source license and can therefore be copied and transformed by any
-group of developers. As anyone can copy and edit the codebase, it is
-also possible for anyone to edit the rules of the blockchain. Therefore
-two or more groups can create two implementations with incompatible
-rulesets. If the different rulesets are constructed to only differ after
-a certain point in the transaction history, the transactions that
-happened before that point is compatible with both implementations.
-Because of this, two blockchains can share the same transaction history
-up to a certain point, but differ after that point. A ruleset change
-that creates two incompatible rulesets after a certain point but where
-the transaction history is shared until the change, is called a
-Contentious hard fork.
+group of developers. Whenever this happens the developers can choose between keeping the transaction history or erasing it. Erasing it means that the developers creates a new cryptocurrency and keeping means that the blockchain is experiencing what has been named a fork. Forks occur most often due to technical disagreements regarding the devel-
+opment of the blockchain. Because of this, developers often keep the old
+blockchain’s transaction history in order to optimize the number of users. This
+results in that cryptocurrency holdings on the old Blockchain are duplicated to
+the new Blockchain. However, due to new struc-
+tural and technological aspects of each blockchain the combined value of the new blockchains does not need to equal the old blockchain’s value before the fork.
 
-Contentious hard forks occur most often due to technical disagreements
-regarding the development of the blockchain. As the the transaction
-history is shared on two blockchains that have split due to a
-contentious hard fork, a user that possessed cryptocurrency in the
-shared transaction history before the time of the contentious hard fork,
-will most likely possess an equivalent amount of cryptocurrency on both
-blockchains after the contentious hard fork. The combined value of the
-cryptocurrency holdings after a contentious hard fork can be lower,
-higher or the same as before the fork. This is primarily due to new
-structural and technological aspects of each blockchain as well as their
-communities.
-
-Forks that occur with respect to cryptocurrencies not acting as selected
-constituents are treated as any other cryptocurrency. Forks that occur
-with respect to cryptocurrencies that presently act as constituents of a
-BlockchainX index and is a selected contentious hard fork creates
-uncertainty in the pricing of the forked constituent and are therefore
-treated as follows:
-
-### Selected contentious hard forks
-
-A selected contentious hard fork is a contentious hard fork where at
-least two selected exchanges publicly announced it’s support.
-Contentious hard forks without public announcements from two selected
-exchanges are treated as any other cryptocurrency.
-
-1.  the price of the forked cryptocurrency is frozen from the time of
-    the fork plus or minus 2 hours, until at least two index exchanges
-    have enabled deposits and withdrawal for both forks.
-
-2.  after the criterion of deposits and withdrawal is satisfied, the
-    fork that is eligible to act as a selected constituent is used to
-    determine the index value. In the case where both forks are eligible
-    as selected constituents where both chains have the same validation
-    rules, and its only purpose is chronological ordering of
-    transactions, the fork with the most work done, meaning the most
-    cumulative work (Proof-of-Work) “weight” , is used to determine the
-    index value.
-
-    In the case where both forks are eligible as selected constituents
-    where validation rules for transactions differ, the BlockchainX
-    Index Committee will decide the valid chain.
-
-3.  the fork that was eligible to act as a selected constituent and used
-    to determine the index value is exempt from criteria 5-8 that
-    concern trade volumes. Furthermore, the fork only needs to fulfill
-    each criterion at the time of rebalancing and not for the standard
-    period of three months.
-
-4.  the fork that was not used as a price source can be included in the
-    index as a constituent if it, at the next rebalancing date, fulfills
-    all eligibility criteria except criteria 5-8 that concern trade
-    volumes. Furthermore, the fork only needs to fulfill each criterion
-    at the time of rebalancing and not for the standard period of three
-    months.
-
-5.  hard forked eligible index constituents with a fork block number
-    less than two weeks from a rebalancing date will not be rebalanced
-    on the rebalancing date.
-
-A fork that occurs with respect to cryptocurrencies that presently act
-as constituents of a BlockchainX index can result in none, one or more
-cryptocurrencies to be included in the indices at the rebalancing date.
+Forks that occur with respect index constituents can cause uncertainty since it is not clear which of the two, or more, cryptocurrencies should be used as index constituent. Forks are also an operational risk for those who seek to track the index. For these reasons, the BlockchainX indices will use the cryptocurrency that is being traded on the largest number of *selected exchanges* as constituent. If both cryptocurrencies are traded on the same number of exchanges, highest price will be used to select constituent. This selection process continues until next rebalancing date. If prices are unavailable due to trade cessation, or other reasons, a last observation carried forward approach will be used.
 
 ### Staking
 
-Writing permissions to a Blockchain’s transaction history are
+Writing permissions to a blockchain’s transaction history are
 administered by the access to private keys, which are connected to
-public addresses containing cryptocurrencies. However, only using
+public addresses controlling cryptocurrencies. However, only using
 private keys does not protect the Blockchain from users trying to spend
 their holdings twice, also known as double-spend attacks. To protect
 itself from these attacks, all Blockchains implement some form of
 consensus process that enables the network to reach consensus regarding
 transaction validity. In order to ensure that users do not corrupt the
-consensus process, participation must come with a cost that is external
-to the network. For example, the Bitcoin network consumes electricity,
+consensus process, participation must come with a cost. For example, the Bitcoin network consumes electricity,
 in a process called Proof-of-Work (PoW), in order to protect its
 transaction history. Staking, or more formally Proof-of-Stake (PoS), is
 another technology used by Blockchains in order to maintain the
@@ -491,7 +414,7 @@ process. Those who stake and verify transactions in an honest manner are
 rewarded with new cryptocurrencies, while those who verify transactions
 that later are deemed invalid are penalized by loosing their stake.
 Certain Blockchains demand that staked cryptocurrencies are locked for a
-certain time or that a certain amount of cryptocurrencies are stacked,
+certain time or that a certain amount of cryptocurrencies are staked,
 while others allow the reward of staking to depend on the time the
 holdings have been staked. The cost of staking is therefore an
 alternative cost, i.e., the cost incurred due to not being able to
@@ -503,7 +426,6 @@ However, specific purpose indices can be created for clients where
 staking revenue is included.
 
 ### Airdrops
-
 Airdrops occur when a Blockchain, or a part of a Blockchain, decides to
 distribute cryptocurrencies, free of charge, to either their or a
 different Blockhain’s users. They are most often performed in order to
@@ -517,6 +439,7 @@ holding the native asset at a specific date, having to perform a set of
 transactions on the network, or participating in different surveys.
 Given the unpredictable nature of airdrops, the BlockchainX indices do
 not include their return.
+Technically an airdrop is not different from a fork and for these reasons airdrops are treated in the same manner as forks.
 
 Governance and control requirements for supervised contributors
 ===============================================================
@@ -711,7 +634,7 @@ when the European Bench- mark Regulation became effective.
   ---------- ------------- ------------------------ ----------------------------------------------
   20181220   0.2           3.4 Circulating supply   Computation scheme
   20181220   0.2           4.7.1 Forks              Criteria for selected contentious hard forks
-  20181220   0.2           4.7.1 Forks              
+  20181220   0.2           4.7.1 Forks
 
   : Changes to the index methodology[]{data-label="changes-table"}
 
