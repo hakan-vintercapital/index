@@ -1,2 +1,2 @@
 # index
-Index methodology for Vinter Capital
+Index methodology for Vinter Capital with one commit.
