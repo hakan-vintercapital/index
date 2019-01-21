@@ -159,8 +159,7 @@ Free-float adjustments are made on the monthly rebalancing date.
 Foreign exchange rates
 ----------------------
 
-Foreign exchange reference rates are obtained from ECB daily at 16:00
-CET. [^1]
+Intra- and interday foreign exchange rates are obtained from WM/Reuters as well as ECB.
 
 Selected exchanges {#sec:selected-exchanges}
 ------------------
@@ -175,7 +174,7 @@ data contributor it must have:
     years.
 
 2.  implemented trading, deposits and withdrawal
-    fees without interruptions and for the duration of one month.
+    fees without interruption and for the duration of one month.
 
 3.  met a minimum monthly liquidity threshold with respect to total
     trading volume.
@@ -303,7 +302,7 @@ Missing data is imputed through a nearest neighbor approach with respect
 to time. Imputation is performed using data from all selected exchanges.
 All BCPs are computed using USD as quote currency. The BCP is then
 translated into SEK and EUR using foreign exchange reference rates from
-ECB.
+trusted data providers.
 
 Index price and weights
 -----------------------
