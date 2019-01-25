@@ -1,0 +1,100 @@
+\documentclass{article}
+%% No need to use inputenc or fontenc with xelatex
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[numbers]{natbib}
+\usepackage{graphicx}
+\usepackage[margin=1.6in]{geometry}
+\usepackage{array}
+\usepackage{mathtools}
+\usepackage{longtable}
+\usepackage{booktabs}
+%%Typesetting support
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage[explicit]{titlesec}
+\usepackage{titling}
+\usepackage{titletoc}
+
+%% Garamond with math support
+\usepackage[cmintegrals,cmbraces]{newtxmath}
+\usepackage{ebgaramond-maths}
+
+%% Set fonts and section styles
+\defaultfontfeatures{Ligatures=TeX}
+\newfontfamily\headingfont[]{[HelveticaNeue-Medium.otf]}
+\newfontfamily\tocfont[]{[HelveticaNeue.ttf]}
+
+\linespread{1.08}
+
+
+
+%% Set section formats
+\titleformat{\chapter}[display]
+  {\headingfont}{\Large\scshape}{0pt}{\LARGE #1}
+\titleformat{\section}
+  {\headingfont}{\huge\scshape\arabic{section}~}{0pt}{\huge #1}
+\titleformat{\subsection}
+  {\headingfont}{\LARGE\scshape\arabic{section}.\arabic{subsection}~}{0pt}{\LARGE #1}
+\titleformat{\subsubsection}
+  {\headingfont}{\Large\scshape\arabic{section}.\arabic{subsection}.\arabic{subsubsection}~}{0pt}{\Large #1}
+
+\renewcommand{\maketitlehooka}{\headingfont}
+
+
+%% Modify table of content
+\titlecontents{section}
+[1.5em]
+{}
+{\contentslabel{2.3em}}
+{\hspace*{-2.3em}}
+{\titlerule*[1pc]{.}\contentspage}
+
+\titlecontents{subsection}
+[3.8em]
+{}
+{\contentslabel{2.3em}}
+{\hspace*{-2.3em}}
+{\titlerule*[1pc]{.}\contentspage}
+
+\titlecontents{subsubsection}
+[6.2em]
+{}
+{\contentslabel{2.3em}}
+{\hspace*{-2.3em}}
+{\titlerule*[1pc]{.}\contentspage}
+
+\makeatletter
+\renewcommand{\maketitle}{\headingfont\bgroup\setlength{\parindent}{0pt}
+\begin{flushleft}
+  \textbf{\@title}
+
+  \@author
+\end{flushleft}\egroup
+}
+\makeatother
+
+\newcolumntype{L}{>{\centering\arraybackslash}m{3cm}}
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+\vspace*{8cm}
+\begin{center}
+\Huge{\textbf{\headingfont{BlockchainX indices}}}\\[0.6cm]
+\Large{\textbf{\headingfont{Vinter Capital}}}\\[0.6cm]
+\large{\headingfont{version 0.3}}
+\end{center}
+\end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+
+$body$
+
+\end{document}

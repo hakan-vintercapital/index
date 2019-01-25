@@ -1,0 +1,35 @@
+\contentsline {section}{\numberline {1}About Vinter Capital}{2}
+\contentsline {section}{\numberline {2}BlockchainX indices}{2}
+\contentsline {section}{\numberline {3}Input data}{2}
+\contentsline {subsection}{\numberline {3.1}Input data requirements}{2}
+\contentsline {subsubsection}{\numberline {3.1.1}Contributor selection}{3}
+\contentsline {subsection}{\numberline {3.2}Continuous evaluation of selected contributors}{3}
+\contentsline {subsection}{\numberline {3.3}Data correction procedure}{3}
+\contentsline {subsection}{\numberline {3.4}Circulating supply}{4}
+\contentsline {subsection}{\numberline {3.5}Free-float}{4}
+\contentsline {subsection}{\numberline {3.6}Foreign exchange rates}{4}
+\contentsline {subsection}{\numberline {3.7}Selected exchanges}{5}
+\contentsline {section}{\numberline {4}Index methodologies}{5}
+\contentsline {subsection}{\numberline {4.1}Eligible constituents}{6}
+\contentsline {subsection}{\numberline {4.2}Selected constituents}{6}
+\contentsline {subsection}{\numberline {4.3}Constituent price (BCP)}{7}
+\contentsline {subsection}{\numberline {4.4}Index price and weights}{7}
+\contentsline {subsection}{\numberline {4.5}Divisor}{7}
+\contentsline {subsection}{\numberline {4.6}Rebalancing}{8}
+\contentsline {subsection}{\numberline {4.7}Market events}{8}
+\contentsline {subsubsection}{\numberline {4.7.1}Forks}{8}
+\contentsline {subsubsection}{\numberline {4.7.2}Staking}{9}
+\contentsline {subsubsection}{\numberline {4.7.3}Airdrops}{9}
+\contentsline {section}{\numberline {5}Governance and control requirements for supervised contributors}{10}
+\contentsline {subsection}{\numberline {5.1}Oversight function}{10}
+\contentsline {subsubsection}{\numberline {5.1.1}Constitution of the oversight function}{11}
+\contentsline {subsection}{\numberline {5.2}Changes}{11}
+\contentsline {subsubsection}{\numberline {5.2.1}Material change}{12}
+\contentsline {subsubsection}{\numberline {5.2.2}Consultation}{12}
+\contentsline {subsubsection}{\numberline {5.2.3}Notice}{12}
+\contentsline {subsubsection}{\numberline {5.2.4}Discretion}{12}
+\contentsline {section}{\numberline {6}Compliance statement}{13}
+\contentsline {section}{\numberline {7}Appendix}{13}
+\contentsline {subsection}{\numberline {7.1}Index tickers}{13}
+\contentsline {subsection}{\numberline {7.2}Changes to the index methodology}{13}
+\contentsfinish 

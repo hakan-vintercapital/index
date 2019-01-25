@@ -1,0 +1,3 @@
+
+pandoc -o index_methodology.tex --template=template.tex  --number-sections index_methodology.md
+pandoc --latex-engine=xelatex -o index_methodology.pdf --template=template.tex index_methodology.tex
