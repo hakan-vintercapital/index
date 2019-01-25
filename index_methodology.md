@@ -1,3 +1,4 @@
+
 About Vinter Capital
 ====================
 
@@ -159,7 +160,7 @@ Free-float adjustments are made on the monthly rebalancing date.
 Foreign exchange rates
 ----------------------
 
-Intra- and interday foreign exchange rates are obtained from WM/Reuters as well as ECB.
+Intraday rates are provided by WM/Reuters and interday foreign exchange rates are obtained from ECB.
 
 Selected exchanges {#sec:selected-exchanges}
 ------------------
@@ -209,14 +210,10 @@ assets. It is equally weighted and denominated in SEK. All indices are
 listed in the appendix.
 
 Every index is priced using a 20-second average of the BlockchainX
-composite constituent price (described in \[sec:BCP\]). Pricing occurs
-with 20-second intervals between 00:00 and 24:00 CET.
+composite constituent price (described in \ref{sec:BCP}). Pricing occurs
+with 20-second intervals between 00:00 and 24:00 CET. The index value is published in USD, EUR and SEK using validated exchange rates.
 
-A daily closing value is calculated at 17:00 CET. The index value is
-published in USD, EUR and SEK using validated exchange rates.
-
-Eligible constituents {#sec:eligible-const}
----------------------
+## Eligible constituents {#sec:eligible-const}
 
 Cryptocurrencies trading on *selected exchanges* are eligible as index
 constituents in BlockchainX indices if they:
@@ -233,7 +230,7 @@ constituents in BlockchainX indices if they:
 
 5.  are not an ongoing Initial Coin Offering (ICO).
 
-6.  have in the last month had at least 20% of its publicly traded volume located at selected
+6.  in the last month had at least 20% of its publicly traded volume located at selected
     exchanges.
 
 7.  have no more than 90% of its monthly trading volume located at a
@@ -263,7 +260,7 @@ Cryptocurrencies that meet these criteria are *eligible constituents*.
 Selected constituents
 ---------------------
 
-*Eligible constituents* (section \[sec:eligible-const\]) are ranked by
+*Eligible constituents* (section \ref{sec:eligible-const}) are ranked by
 market capitalization in descending order. For indices with 10
 constituents, the top 8 of the ranked list are selected immediately.
 Secondly, constituents that (a) were selected at the previous
@@ -312,7 +309,7 @@ $k(t)$. Let $w_i(t)$ and $p_i(t)$ be the weight and BCP of asset $i$.
 The BlockchainX index price is then given by: $$% \text{BLX}(t) =
   \frac{  \sum_{1}^{k(t)} w_i(t) p_{i}(t)  }{\text{DIV}(t)}
 \label{eq:index}$$ where $\text{DIV}(t)$ is a divisor (described in
-section \[sec:divisor\]). The weight of asset $i$ at time $t$ is:
+section \ref{sec:divisor}). The weight of asset $i$ at time $t$ is:
 $$w_i(t)=
 \begin{cases}
     1 / k(t), & \text{for equally weighted indices} \\
@@ -378,16 +375,18 @@ constituents.
 
 ### Forks
 
-Formally, a blockchain is a distributed database of a network's transaction history. To own a blockchain's cryptocurrency is to have writing permission to this database. A transaction of
-cryptocurrencies is therefore the transferal of these writing
+Formally, a blockchain is a distributed database of a network's transaction history. To own a blockchain's cryptocurrency is to have writing permission to this database. A transaction of cryptocurrencies is therefore the transferal of these writing
 permissions to another user. Blockchains are often developed under an
 open source license and can therefore be copied and transformed by any
 group of developers. Whenever this happens the developers can choose to keep parts of the transaction history or to erase it. Erasing it means that the developers creates a new cryptocurrency and keeping it means that the blockchain is experiencing what has been named a fork. Forks can occur due to technical disagreements regarding the devel-
-opment of the blockchain or to correct certain parts of the transaction history. The old
-blockchain’s transaction history is therefore often kept intact or partly intact in order to retain as much of the old network as possible. This
-results in that those who held cryptocurrency on the old blockchain find themselves to own an euqal amount of cryptocurrency on the new blockchain.
+opment of the blockchain or to correct certain parts of the transaction history. The old blockchain’s transaction history is therefore often kept intact or partly intact in order to retain as much of the old network as possible. This
+results in that those with cryptocurrency assets on the old blockchain find themselves with an equal amount of cryptocurrency on the new blockchain. All BlockchainX indices therefore define a fork as an event that fulfills the following two criteria:
 
-Forks that occur with respect index constituents can cause uncertainty in the computation of the index since it is not clear which of the two, or more, forks that should be used as the constituent. Forks are also an operational risk for those who seek to track the index since initiating trading of a new cryptocurrency often requires adjustments to trading infrastructure. In order for a fork to be eligible as an index constituent it needs to fulfill all BlockchainX constituent criteria, with exemption of those criteria that are based on historical performance. The eligible fork that is traded on the largest number of *selected exchanges* is then chosen as the constituent. If two or more eligible forks are traded on the same number of exchanges, highest price is used to select a constituent. This selection process continues until next rebalancing date. If prices are unavailable due to trade cessation, or other reasons, a last observation carried forward approach is used to obtain a price.
+1.  Holdings of one cryptocurrency leads to the obtainment of an equal amount of another cryptocurrency and these two cryptocurrencies are independently traded.
+2.  The same form of actions are required to access the old as well as the new assets.
+
+Forks that occur with respect index constituents can cause uncertainty in the computation of the index since it is not clear which of the two, or more, forks that should be used as the constituent. Forks are also an operational risk for those who seek to track the index since initiating trading of a new cryptocurrency often requires adjustments of trading infrastructure.
+ In order for a fork to be eligible as an index constituent it needs to fulfill all BlockchainX constituent criteria, with exemption of those criteria that are based on historical performance. The eligible fork that is traded on the largest number of *selected exchanges* is then chosen as the constituent. If two or more eligible forks are traded on the same number of exchanges, highest price is used to select a constituent. This selection process continues until next rebalancing date. If prices are unavailable due to trade cessation, or other reasons, a last observation carried forward approach is used to obtain a price.
 
 ### Staking
 
@@ -434,8 +433,7 @@ tasks in order to obtain the free cryptocurrencies. This can include
 holding the native asset at a specific date, having to perform a set of
 transactions on the network, or participating in different surveys.
 Given the unpredictable nature of airdrops, the BlockchainX indices do
-not include their return.
-Technically an airdrop is not different from a fork and for these reasons airdrops are treated in the same manner as forks.
+not include their return. However, certain airdrops are technically and structurally equivalent to forks and therefore treated as such.
 
 Governance and control requirements for supervised contributors
 ===============================================================
@@ -522,6 +520,9 @@ oversight function, limitations and removal of voting rights from
 conflicted members as well as the exclusion of members from discussions
 where they could be conflicted. Furthermore, these procedures forbid
 members to sit on oversight functions of more than one administrator.
+
+A fork is defined as an event where a holder assets are being copied onto a new blockchain and the holder does not have to take an other form of action in order to access this holding thatn the holdings on the old blockchain.
+
 
 Changes
 -------
@@ -623,15 +624,17 @@ Index tickers
 Changes to the index methodology
 --------------------------------
 
-This table contains all changes to the index methodology after 0180101,
+This table contains all changes to the index methodology after 20180101,
 when the European Bench- mark Regulation became effective.
 
   **Date**   **Version**   **Section**              **Change**
-  ---------- ------------- ------------------------ ----------------------------------------------
+  ---------- ------------- ------------------------ -----------------------------------
   20181220   0.2           3.4 Circulating supply   Computation scheme
   20181220   0.2           4.7.1 Forks              Criteria for selected contentious hard forks
   20181220   0.2           4.7.1 Forks
+  20190125   0.3           4.7.1 Forks              Definition and mangement
+  20190125   0.3           4.7.3 Airdrops           Management
 
-  : Changes to the index methodology[]{data-label="changes-table"}
+  :Changes to the index methodology[]{data-label="changes-table"}
 
 [^1]: [www.ecb.europa.eu/stats/policy\_and\_exchange\_rates/euro\_reference\_exchange\_rates](www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates)
