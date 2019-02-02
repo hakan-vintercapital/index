@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2018.11.28)  25 JAN 2019 23:59
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2018.11.28)  28 JAN 2019 21:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1307,10 +1307,19 @@ y misconduct by contributors, where the bench-
 LaTeX Font Info:    Font shape `TU/EBGaramond12(0)/bx/n' will be
 (Font)              scaled to size 10.0pt on input line 761.
 
-Overfull \vbox (1.23013pt too high) has occurred while \output is active []
+Underfull \hbox (badness 3568) in paragraph at lines 808--808
+[]|\TU/EBGaramond12(0)/bx/n/10 The price of an index constituent is
+ []
 
 
-[13] (./index_methodology.aux)
+Package longtable Warning: Column widths have changed
+(longtable)                in table 2 on input line 812.
+
+[13]
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+[14] (./index_methodology.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1324,4 +1333,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  61i,9n,88p,923b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index_methodology.pdf (14 pages).
+Output written on index_methodology.pdf (15 pages).

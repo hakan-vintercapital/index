@@ -385,7 +385,7 @@ results in that those with cryptocurrency assets on the old blockchain find them
 1.  Holdings of one cryptocurrency leads to the obtainment of an equal amount of another cryptocurrency and these two cryptocurrencies are independently traded.
 2.  The same form of actions are required to access the old as well as the new assets.
 
-Forks that occur with respect index constituents can cause uncertainty in the computation of the index since it is not clear which of the two, or more, forks that should be used as the constituent. Forks are also an operational risk for those who seek to track the index since initiating trading of a new cryptocurrency often requires adjustments of trading infrastructure.
+Forks that occur with respect to index constituents can cause uncertainty in the computation of the index since it is not clear which of the two, or more, forks that should be used as the constituent. Forks are also an operational risk for those who seek to track the index since initiating trading of a new cryptocurrency often requires adjustments of trading infrastructure.
  In order for a fork to be eligible as an index constituent it needs to fulfill all BlockchainX constituent criteria, with exemption of those criteria that are based on historical performance. The eligible fork that is traded on the largest number of *selected exchanges* is then chosen as the constituent. If two or more eligible forks are traded on the same number of exchanges, highest price is used to select a constituent. This selection process continues until next rebalancing date. If prices are unavailable due to trade cessation, or other reasons, a last observation carried forward approach is used to obtain a price.
 
 ### Staking
@@ -631,7 +631,7 @@ when the European Bench- mark Regulation became effective.
   ---------- ------------- ------------------------ -----------------------------------
   20181220   0.2           3.4 Circulating supply   Computation scheme
   20181220   0.2           4.7.1 Forks              Criteria for selected contentious hard forks
-  20181220   0.2           4.7.1 Forks
+  20181220   0.2           4.7.1 Forks              \multicolumn{1}{p{6cm}}{The price of an index constituent is frozen during a 2-hour time window centered at the time point at which the fork will occur.}
   20190125   0.3           4.7.1 Forks              Definition and mangement
   20190125   0.3           4.7.3 Airdrops           Management
 

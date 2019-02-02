@@ -319,7 +319,7 @@ assets. It is equally weighted and denominated in SEK. All indices are
 listed in the appendix.
 
 Every index is priced using a 20-second average of the BlockchainX
-composite constituent price (described in {[}sec:BCP{]}). Pricing occurs
+composite constituent price (described in \ref{sec:BCP}). Pricing occurs
 with 20-second intervals between 00:00 and 24:00 CET. The index value is
 published in USD, EUR and SEK using validated exchange rates.
 
@@ -421,7 +421,7 @@ Let the number of selected constituents at time \(t\) be denoted as
 \(i\). The BlockchainX index price is then given by: \[% \text{BLX}(t) =
   \frac{  \sum_{1}^{k(t)} w_i(t) p_{i}(t)  }{\text{DIV}(t)}
 \label{eq:index}\] where \(\text{DIV}(t)\) is a divisor (described in
-section {[}sec:divisor{]}). The weight of asset \(i\) at time \(t\) is:
+section \ref{sec:divisor}). The weight of asset \(i\) at time \(t\) is:
 \[w_i(t)=
 \begin{cases}
     1 / k(t), & \text{for equally weighted indices} \\
@@ -502,18 +502,26 @@ partly intact in order to retain as much of the old network as possible.
 This results in that those with cryptocurrency assets on the old
 blockchain find themselves with an equal amount of cryptocurrency on the
 new blockchain. All BlockchainX indices therefore define a fork as an
-event that fulfills the following two criteria: 1. Holdings of one
-cryptocurrency leads to the obtainment of an equal amount of another
-cryptocurrency and these two cryptocurrencies are independently traded.
-2. The same form of actions are required to access the old as well as
-the new assets.
+event that fulfills the following two criteria:
 
-Forks that occur with respect index constituents can cause uncertainty
-in the computation of the index since it is not clear which of the two,
-or more, forks that should be used as the constituent. Forks are also an
-operational risk for those who seek to track the index since initiating
-trading of a new cryptocurrency often requires adjustments of trading
-infrastructure. In order for a fork to be eligible as an index
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Holdings of one cryptocurrency leads to the obtainment of an equal
+  amount of another cryptocurrency and these two cryptocurrencies are
+  independently traded.
+\item
+  The same form of actions are required to access the old as well as the
+  new assets.
+\end{enumerate}
+
+Forks that occur with respect to index constituents can cause
+uncertainty in the computation of the index since it is not clear which
+of the two, or more, forks that should be used as the constituent. Forks
+are also an operational risk for those who seek to track the index since
+initiating trading of a new cryptocurrency often requires adjustments of
+trading infrastructure. In order for a fork to be eligible as an index
 constituent it needs to fulfill all BlockchainX constituent criteria,
 with exemption of those criteria that are based on historical
 performance. The eligible fork that is traded on the largest number of
@@ -777,10 +785,16 @@ indexes.{}}\tabularnewline
 \subsection{Changes to the index
 methodology}\label{changes-to-the-index-methodology}
 
-This table contains all changes to the index methodology after 0180101,
+This table contains all changes to the index methodology after 20180101,
 when the European Bench- mark Regulation became effective.
 
 \begin{longtable}[]{@{}llll@{}}
+\caption{Changes to the index methodology{}}\tabularnewline
+\toprule
+\textbf{Date} & \textbf{Version} & \textbf{Section} &
+\textbf{Change}\tabularnewline
+\midrule
+\endfirsthead
 \toprule
 \textbf{Date} & \textbf{Version} & \textbf{Section} &
 \textbf{Change}\tabularnewline
@@ -790,11 +804,10 @@ when the European Bench- mark Regulation became effective.
 scheme\tabularnewline
 20181220 & 0.2 & 4.7.1 Forks & Criteria for selected contentious hard
 forks\tabularnewline
-20181220 & 0.2 & 4.7.1 Forks &\tabularnewline
-20190125 & 0.2 & 4.7.1 Forks & Definition and mangement \tabularnewline
-20190125 & 0.2 & 4.7.3 Airdrops & Management \tabularnewline
-: Changes t & o the index me & thodology{[}{]}\{data-label=``c &
-hanges-table``\}\tabularnewline
+20181220 & 0.2 & 4.7.1 Forks &
+\multicolumn{1}{p{6cm}}{The price of an index constituent is frozen during a 2-hour time window centered at the time point at which the fork will occur.}\tabularnewline
+20190125 & 0.3 & 4.7.1 Forks & Definition and mangement\tabularnewline
+20190125 & 0.3 & 4.7.3 Airdrops & Management\tabularnewline
 \bottomrule
 \end{longtable}
 
